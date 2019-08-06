@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* event_subpage #content */
+#content{text-align: center;width: 100%}
+#content #mainslider .visual, #content #mainslider .visual li, #content #mainslider .visual li a{width:  100%;height: 801px;}/* padding-top151을 더해서 650+151= */
+#content #mainslider{overflow:  hidden;position: relative;}
+
+#content #mainslider .visual li{position: absolute;top: 0;left: 100%}
+#content #mainslider .visual li a{display: block;background: no-repeat 50% 0%}
+#content #mainslider .visual .list1{left: 0}
+#content #mainslider .visual .list1 a{background-image: url("../images/event/eventbg1.jpg")}
+#content #mainslider .visual .list2 a{background-image: url("../images/event/eventbg2.jpg")}
+#content #mainslider .visual .list3 a{background-image: url("../images/event/eventbg3.jpg")}
+#content #mainslider .play_stop, #content #mainslider .indicator{left: 50%;bottom: 50px}
+#content #mainslider .play_stop{margin-left: -430px;width: 100px;height: 30px;line-height: 30px;text-align: center;color: #99001c}
+#content #mainslider .play_stop > button{padding: 5px 5px;border-radius: 30px}
+#content #mainslider .prev_next button{position: absolute;width: 46px;height: 46px;top: 450px;}
+#content #mainslider .prev_next .prev{background-image: url("../images/common/prev_btn.png");left: 0;margin-left: 20px}
+#content #mainslider .prev_next .next{background-image: url("../images/common/next_btn.png");right: 0;margin-right: 20px}
+
+#content #mainslider .indicator{font-size: 0;background: no-repeat;height: 17px;width: 100px;margin-left: -550px}
+#content #mainslider .indicator li{float: left;margin-left: 17px}
+#content #mainslider .indicator li.on a{background: #99001c;width: 17px;height: 17px;border-radius: 50%}
+#content #mainslider .indicator li:first-child{margin-left: 0px}
+#content #mainslider .indicator li a{display: inline-block;background-image: url("../images/common/indiBtn.png");width: 17px;height: 17px}
+
+/* #content #mainslider .visual li a img{opacity: ;} */
+/* font */
+#content #product p, #content .white_pr ul .text_box span, #content .white_pr ul .text_box button, #content #eye_sub #how ul span, #content #eye_sub #how ul p, #content #eye_sub .sub_tit, #content .modal_cnt span, #content .modal_cnt p, #content .modal_cnt span, #content .modal_cnt ul li, #content #store .bg p{font-family: NotoSansL}
+#content #product h3, #content .media h3, #content .white_pr > p,  #content #eye_sub .eye_liner  span, #content #eye_sub .eye_liner #box2 ul span{font-family: NotoSansM;}
+/* #content #eye_sub .eye_liner .area1 span, #content #eye_sub .eye_liner .box2 ul span */
+#content .media p, #content #product ul li a, #content #eye_sub .eye_liner h4, #content #eye_sub .eye_liner .strong, #content #mainslider .play_stop, #content #eye_sub .mainbg h2{font-family: NotoSansB}
+#content #eye_sub #box3 h4, #content .media .bg_box, #content #eye_sub .title, #content #eye_sub .eye_liner #box2 ul span, #content #eye_sub #box3 p, #content #eye_sub #box3 span, #content .modal_cnt h4, #content #store .bg h2, #content #store .area .wrap .search_box, #content #store h3{font-family: NotoSansR}
+/* transition */
+#content #product ul li img, #content #eye_sub .eye_liner #box1 img, #content #eye_sub .eye_liner #box2 img, #content #eye_sub #slider ul li a, #content #eye_sub .eye_liner .area1 li a span, #content #eye_sub #box3 button{-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s}
+#content .white_pr ul li img, #content .media .bg_box button{-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s}
+
+
+
+/* #product */
+#content #product, #content .white_pr, #content .white_pr .media{width: 1200px;margin: 0 auto}
+#content #product h3, #content .media h3{font-size: 50px}
+/* #content #product{width: 1200px}
+ */#content #product h3{margin-top: 200px}
+#content #product p{font-size: 22px;padding: 53px 0 109px}
+#content #product ul{height: 527px;width: 100%}
+#content #product ul li{float: left;position: relative;background: #333;width: 300px;height: 527px;overflow: hidden;}
+#content #product ul li img{opacity: 0.3;filter: Alpha(opacity=30)}/* ;transition: all 0.3s */
+#content #product ul li.on img{opacity: 1;filter: Alpha(opacity=100);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);transform: scale(1.1)}
+#content #product ul li a{display: inline-block;width: 150px;height: 300px;position: absolute;right: 0;top: 50%;background: url("../images/event/event_sale_bg.png") no-repeat  right;margin-top: -140px}
+#content #product ul li a .box{margin-top: 80px;text-align: right;padding-right: 5px}
+#content #product ul li a span{font-size: 30px}
+#content #product ul li a strong{font-size: 35px;font-style: italic;color: #99001c}
+
+/* .white_pr */
+#content .white_pr h3{margin-top: 222px}
+#content .white_pr > p{font-size: 25px;margin: 43px 0 153px}
+#content .white_pr ul .left{text-align: left}
+#content .white_pr ul .right{text-align: right}
+#content .white_pr ul li{margin-bottom: 200px}
+#content .white_pr ul li:after{content: "";display:block;width: 165px;height: 60px;background: url("../images/event/shadow_1.png")no-repeat;margin-left: -10px}
+#content .white_pr ul .right:after{margin-left: 1065px}
+#content .white_pr ul li.on img{-webkit-transform: translateY(-50px);-ms-transform: translateY(-50px);-moz-transform: translateY(-50px);-o-transform: translateY(-50px);transform: translateY(-50px)}
+#content .white_pr ul .text_box{position: absolute;left: 225px;bottom: 50px;}
+#content .white_pr ul .right .text_box{right: 225px}
+#content .white_pr ul .text_box > p{font-size: 25px;margin-bottom: 24px}
+#content .white_pr ul .text_box span{font-size: 18px}
+#content .white_pr ul .text_box button{font-size: 20px;border: 1px solid #ccc;width: 173px;height: 47px;margin-top: 37px}
+
+/* .media */
+#content .media h3:after{content: "";display: block;background: url("../images/event/event_makeup_textdeco.png") no-repeat;width: 155px;height: 135px;position: absolute;bottom: 0%;right: 50%;margin-right: -370px;margin-bottom: 10px}
+#content .media .video{margin-top: 116px}
+#content .media iframe{border: none}
+#content .media p{font-size: 30px;margin: 126px 0 197px}
+#content .media p span, #content .media .bg_box ul li span{color: #99001c}
+#content .media .bg_box{background: url("../images/event/event_media_bg.jpg") no-repeat;width: 1200px;height: 760px;margin: 0 auto;font-size: 25px}
+#content .media .bg_box ul li{padding-bottom: 29px}
+#content .media .bg_box ul{margin-bottom: 160px}
+#content .media .bg_box button{font-size: 20px;color: #fff;background: #99001c;width: 160px;height: 48px}
+#content .media .bg_box button:hover{background: none;border: 1px solid #99001c;color: #99001c}
+
+
+/* eyeproduct */
+#content #eye_sub{margin: 0 auto;overflow: hidden}
+#content #eye_sub .mainbg{width: 100%;height: 650px;background: url("../images/product/black/eye/eye2bg.jpg") no-repeat top center}
+#content #eye_sub .mainbg h2{font-size: 70px;position: absolute;left: 393px;top: 310px}
+#content #eye_sub .shadow{margin-top: 300px;background: url("../images/product/black/eye/shadow_bg.png") no-repeat 70% -3%;width: 100%;}
+#content #eye_sub .title{font-size: 50px}
+#content #eye_sub .sub_tit{font-size: 36px}
+#content #eye_sub .shadow h3{margin-bottom: 40px}
+#content #eye_sub #slider{position: relative;width: 1120px;height: 290px;padding: 30px 40px;margin: 0 auto;margin-top: 200px;overflow: hidden;}
+#content #eye_sub #slider ul{position: relative;height: 290px;width: 2671px;margin-left: -5px}
+#content #eye_sub #slider ul li{float: left;margin: 0 10px;width: 260px;height: 260px;}
+#content #eye_sub #slider ul li:hover, #content #eye_sub #slider ul li a:focus{color: #99001c}
+/* 버튼제어 */
+#content #eye_sub #slider button{position: absolute;width:  40px;height: 100%;background: no-repeat center;background-color: #fff;margin-top: -320px;font-size: 0}
+#content #eye_sub #slider #prev{left: 0;background-image: url("../images/common/prev_btn_mini.png")}
+#content #eye_sub #slider #next{right: 0;background-image: url("../images/common/next_btn_mini.png")}
+
+
+/* .fade */
+.fade{opacity: 0;filter: Alpha(opacity=0);transition: all 0.5s}
+.fade.on{opacity: 1;filter: Alpha(opacity=100)}
+.fade.right{left: -50px}
+.fade.left{right: -50px}
+.fade.up{top: 50px}
+.fade.right.on{left: 0}
+.fade.left.on{right: 0}
+.fade.up.on{top: 0px}
+
+#content #eye_sub .eye_liner{background: url("../images/product/black/eye/eyeline_bg.png") no-repeat 25% 0%}
+#content #eye_sub .eye_liner p{font-size: 20px}
+#content #eye_sub .eye_liner .sub_tit{font-size: 36px;margin: 50px 0}
+#content #eye_sub .eye_liner{margin: 0 auto;width: 1200px}
+#content #eye_sub .eye_liner h3{margin-top: 460px}
+#content #eye_sub .eye_liner h4{text-align: center;font-size: 25px;margin-bottom: 53px}
+#content #eye_sub .eye_liner #box1{margin-top: 188px}
+#content #eye_sub .eye_liner #box1 h4{margin-right: -600px}
+#content #eye_sub .eye_liner #box1 img.on{transform: translateX(30px)}
+#content #eye_sub .eye_liner .area1 li{margin-bottom: 63px}
+#content #eye_sub .eye_liner .area1 li a:hover span, #content #eye_sub .eye_liner .area1 li a:focus span{color: #99001c}
+#content #eye_sub .eye_liner .area1 span{position: absolute;right: 0;top: 0;margin-top: -15px;font-size: 20px;margin-right: -110px}
+#content #eye_sub .eye_liner .area1 span:after{content: "";display: block;background: no-repeat right bottom;width: 260px;height: 62px;margin: 50%;margin-top: -13px}
+#content #eye_sub .eye_liner .area1 .line1 span:after{background-image: url("../images/product/black/eye/liner1bg.png")}
+#content #eye_sub .eye_liner .area1 .line2 span:after{background-image: url("../images/product/black/eye/liner2bg.png")}
+#content #eye_sub .eye_liner .area1 .line3 span:after{background-image: url("../images/product/black/eye/liner3bg.png")}
+#content #eye_sub .eye_liner .area1 .line4 span:after{background-image: url("../images/product/black/eye/liner4bg.png")}
+#content #eye_sub .eye_liner #box1 .area2{font-size: 19px;line-height: 23px;font-family: NotoSansR;padding-left: 700px}
+#content #eye_sub .eye_liner .area2 h4{margin-top: 30px}
+#content #eye_sub .eye_liner .strong{margin: 33px 0}
+#content #eye_sub .eye_liner #box2{padding: 363px 0 400px;background: url("../images/product/black/eye/liner_bg.jpg") no-repeat right top;margin-top: 300px}
+#content #eye_sub .eye_liner #box2 .sub_tit{margin-left: 130px}
+#content #eye_sub .eye_liner #box2 img.on{-webkit-transform: translateX(-30px);-ms-transform: translateX(-30px);-moz-transform: translateX(-30px);-o-transform: translateX(-30px);transform: translateX(-30px)}
+#content #eye_sub .eye_liner #box2 h4{margin-left: 100px}
+#content #eye_sub .eye_liner #box2 .text, #content #eye_sub .eye_liner #box2 h4, #content #eye_sub .eye_liner .area2{text-align: left}
+#content #eye_sub .eye_liner #box2 .text{line-height: 36px;margin-bottom: 200px}
+#content #eye_sub .eye_liner #box2 ul{height: 200px;text-align: right;top: 0;margin-top: 400px}
+#content #eye_sub .eye_liner #box2 ul li:first-child{margin-bottom: 70px}
+
+#content #eye_sub #how{margin-top: 300px;margin: 0 auto;width: 1200px;margin-bottom: 453px}
+#content #eye_sub #how .text_box{background: url("../images/product/black/eye/how_to_use_bg.png") no-repeat 20% center}
+#content #eye_sub #how .sub_tit{padding-bottom: 60px;border-bottom: 1px solid #979797;}
+#content #eye_sub #how ul{margin-top: 117px}
+#content #eye_sub #how ul li{text-align: left;margin-bottom: 186px;position: relative}
+#content #eye_sub #how .deep li:last-child{margin-bottom: 0}
+#content #eye_sub #how .deep li span:first-child{display: block;margin-top: 55px}
+#content #eye_sub #how ul li p{display: inline-block;font-size: 20px;margin: 61px 151px}
+#content #eye_sub #how ul li span{display: block;font-size: 25px;margin-bottom: 24px}
+
+
+/* eyebrow */
+#content #eye_sub #box3{background: #fff;margin: 0 auto;width: 1200px;height: 900px;margin-bottom: 560px}
+#content #eye_sub #box3 h3{margin-bottom: 150px}
+#content #eye_sub #box3 h4{font-size: 28px;padding: 70px 0 21px}
+#content #eye_sub #box3 p{color: #666;margin-bottom: 23px;font-size: 20px}
+#content #eye_sub #box3 span{font-size: 15px;color: #99001c;
+}
+#content #eye_sub #box3 span:after{content: "";display: block;width: 315px;height: 1px;background: #a7a7a7;margin-left: 130px;margin-top: 16px}
+#content #eye_sub #box3 .brow1, #content #eye_sub #box3 #brow2, #content #eye_sub #box3 .mascara1, #content #eye_sub #box3 .mascara2{display: inline-block;width: 600px;height: 450px;box-sizing: border-box}
+#content #eye_sub #box3 .img{background: no-repeat top center;border: none}
+#content #eye_sub #box3 .brow1{background-image: url("../images/product/black/eye/eyebrow1_1.jpg");float: left}
+#content #eye_sub #box3 .mascara2{background-image: url("../images/product/black/eye/mascara2.jpg");float: right}
+
+#content #eye_sub #box3 #brow2{border: 1px solid #333;background: url("../images/product/black/eye/brow1.jpg") no-repeat 12% 50%;border-bottom: none;padding-left: 80px}
+
+#content #eye_sub #box3 #brow2.bg1{background-image: url("../images/product/black/eye/brow1.jpg");background-position: 1% 50%}
+#content #eye_sub #box3 #brow2.bg2{background-image: url("../images/product/black/eye/brow2.jpg")}
+#content #eye_sub #box3 #brow2.bg3{background-image: url("../images/product/black/eye/brow3.jpg")}
+#content #eye_sub #box3 #brow2.bg4{background-image: url("../images/product/black/eye/brow4.jpg")}
+
+#content #eye_sub #box3 #brow2 span, #content #eye_sub #box3 #brow2 p, #content #eye_sub #box3 #brow2 h4{margin-left: 50px}
+
+#content #eye_sub #box3 .mascara1{border-left: 1px solid #333;border-bottom: 1px solid #333;background: url("../images/product/black/eye/mascara.jpg") no-repeat right center;padding-right: 150px}
+#content #eye_sub #box3  .mascara1 span:after{margin-left: 60px;}
+#content #eye_sub #box3 button{display: block;width: 173px;height: 47px;border: 1px solid #ccc;font-size: 20px;margin: 24px 140px}
+#content #eye_sub #box3 button:hover{background: #99001c;color: #fff}
+#content #eye_sub #box3 #brow2 ul li{float: left;margin-left: 13px}
+#content #eye_sub #box3 #brow2 ul li:first-child{margin-left: 0}
+#content #eye_sub #box3 #brow2 ul{width: 320px;margin: 0px 135px}
+
+/* store */
+#content #store{margin-bottom: 280px}
+#content #store h3{font-size: 50px;padding-bottom: 100px}
+#content #store .bg{width: 100%;height: 650px;padding-top: 151px;background: url("../images/customer/bgbg.jpg") no-repeat left top}
+#content #store .bg h2{font-size: 60px}
+
+#content #store .bg p{position: relative;font-size: 25px}
+
+/* #content #store .bg p:after{position: absolute;content: "";height: 1px;width: 240px;background: #333;margin-left: -175px;margin-top: -90px} */
+#content #store .bg .bg_txt{margin-left: -650px;padding-top: 270px}
+#content #store .area{background: #fff;width: 1200px;height: 705px;margin: 0 auto;margin-top: 230px}
+#content #store .area .map{float: left;;width: 567px}
+#content #store .area .wrap{border: 1px solid #a0a0a0;width: 565px;height: 705px;float: right;border-top: none}
+#content #store .area .wrap p{font-size: 20px;color: #333;text-align: left;margin: 43px 0 14px}
+
+#content #store .area .wrap .sel_group{border: 1px solid #a0a0a0;border-top: none}
+
+#content #store .area .wrap .sel1, #content #store .area .wrap .sel2{width: 200px;height: 185px}
+#content #store .area .wrap .sel1{float: left;margin-left: 57px}
+#content #store .area .wrap .sel2{float: right;margin-right: 57px}
+#content #store .area .wrap .choice1, #content #store .area .wrap .choice2{height: inherit;overflow-y: scroll;border: 1px solid #a0a0a0;background-color: #fff}
+#content #store .area .wrap .choice1 #sidoList li.on a{color: #99001c;}
+#content #store .area .wrap .search_box{width: 453px;text-align: left;margin-top: 350px;font-size: 20px;margin-left: 57px}
+#content #store .area .wrap .search_box .search{padding-bottom: 33px}
+#content #store .area .wrap .search_box label{display: block;padding-bottom: 9px}
+#content #store .area .wrap .search_box input{width: 450px;height: 33px}
+#content #store .area .wrap button{width: 95px;height: 40px;border: 1px solid #a0a0a0;color: #333;font-size: 20px;line-height: 40px;margin-top: 60px}
+
+/* modal */
+#content #mask, #content .modal_cnt{display: none;position: fixed;z-index: 600}
+#content #mask{left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.8)}
+#content .modal_cnt{width: 1040px;height: 610px;background: #fff;margin: 0 auto;border: 1px solid #a0a0a0;border-radius: 70px;box-sizing: border-box}
+#content .modal_cnt h4{font-size: 25px;margin: 51px 0 40px 170px;}
+#content .modal_cnt h4+img{float: left;margin-top: -80px;padding-left: 20px;padding-right: 70px;position: relative}
+#content .modal_cnt span, #content .modal_cnt p{text-align: left}
+#content .modal_cnt p{font-size: 18px;color: #333;line-height: 28px}
+#content .modal_cnt .detail{position: absolute;float: left;height: 100px;margin-top: 90px}
+#content .modal_cnt .detail ul{width: 270px;height: auto;margin-left: 55px}
+
+#content .modal_cnt ul li{float: left;margin-left: 10px}
+#content .modal_cnt .detail li:first-child{margin-left: 0px}
+#content .modal_cnt ul span{display: block;font-size: 13px}
+#content .modal_cnt .use{right: 0;margin-right: -500px;margin-top: 100px;font-size: 15px;width: 600px}
+#content .modal_cnt .use img{margin-left: 500px}
+#content .modal_cnt .use ul{text-align: left;margin-left: 500px;width: 500px;height: auto;padding-top: 20px} 
+
+#content .modal_cnt button{position: absolute;border: 1px solid #979797;width: 50px;height: 30px;bottom: 0;font-size: 13px;top: 37px;right: 51px;}

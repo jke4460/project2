@@ -1,0 +1,191 @@
+@charset "utf-8";
+@font-face{
+    font-family: NotoSansR;
+    src: url("../fonts/NotoSansKR-Regular.eot");
+    src: local("※"),
+            url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+            url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+            url("../fonts/NotoSansKR-Regular.otf") format("opentype")
+
+}
+@font-face{
+    font-family: NotoSansM;
+    src: url("../fonts/NotoSansKR-Medium.eot");
+    src: local("※"),
+            url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),
+            url("../fonts/NotoSansKR-Medium.woff") format("woff"),
+            url("../fonts/NotoSansKR-Medium.otf") format("opentype")
+
+}
+@font-face{
+    font-family: NotoSansL;
+    src: url("../fonts/NotoSansKR-Light.eot");
+    src: local("※"),
+            url("../fonts/NotoSansKR-Light.woff2") format("woff2"),
+            url("../fonts/NotoSansKR-Light.woff") format("woff"),
+            url("../fonts/NotoSansKR-Light.otf") format("opentype")
+
+}
+@font-face{
+    font-family: NotoSansB;
+    src: url("../fonts/NotoSansKR-Bold.eot");
+    src: local("※"),
+            url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),
+            url("../fonts/NotoSansKR-Bold.woff") format("woff"),
+            url("../fonts/NotoSansKR-Bold.otf") format("opentype")
+
+}
+@font-face{
+    font-family: NotoSrfR;
+    src: url("../fonts/NotoSerifKR-Regular.eot");
+    src: local("※"),
+         url("../fonts/NotoSerifKR-Regular.otf") format("opentype")
+}
+@font-face{
+    font-family: NotoSrfM;
+    src: url("../fonts/NotoSerifKR-Medium.eot");
+    src: local("※"),
+         url("../fonts/NotoSerifKR-Medium.otf") format("opentype")
+}
+@font-face{
+    font-family: NotoSrfB;
+    src: url("../fonts/NotoSerifKR-Bold.eot");
+    src: local("※"),
+         url("../fonts/NotoSerifKR-Bold.otf") format("opentype")
+}
+
+/* 태그초기화 */
+body,nav,h1,h2,h3,h4,h5,p,ul,button,dl,dd{margin: 0;padding: 0;}
+body{font-family: NotoSansR,"나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic";font-size: 1em;color: #333}
+h1,h2,h3,h4,h5{font-weight: normal;font-size: inherit;font-family: notoSansB}
+ul{list-style: none}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit}
+img{vertical-align: top;border: none}
+button{cursor: pointer;border: none;background: none;font-size: inherit;font-family: inherit;color: inherit}
+address{font-style: normal}
+header,nav,section,article,footer{display: block}
+
+/* 공통 클래스 */
+.f_l{float: left}
+.f_r{float: right}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+.clearfix:after{content: "";display: block;clear: both;}
+.blind{font-size: 0;line-height: 0;width: 1px;height: 1px;overflow: hidden;position: absolute;top: 0;left: -9999px;text-indent: -9999px}
+.area{width: 1200px;margin: 0 auto}
+
+/* skip navigation */
+#skip a{position: absolute;top: 0;left: 0;left: -9999px;z-index: 500;}
+#skip a:focus, #skip a:active{left: 0;width: 100%;text-align: center;background: #660128;color: #fff;font-family: NotoSansB;height: 40px;line-height: 40px;}
+
+/* ========================= #header ========================== */
+#header{position: fixed;top: 0;left: 0;width: 100%;height: 150px;border-bottom: 1px solid #999;background: #fff;z-index: 300}
+#header .logo, #header .util{position: absolute;top: 0;z-index: 100}
+#header .logo{left: 50%;margin-left: -600px;padding-top: 37px}
+
+
+/* #gnb */
+#gnb{position: relative;}
+#gnb > ul, #gnb > ul > li > div > ul{width: 840px;height: 150px;margin: 0 auto;}
+#gnb ul li{float: left;}
+#gnb > ul > li{width: 140px;}
+#gnb ul li a{display: block;font-size: 18px}
+#gnb > ul > li > a{position: relative;font-family: NotoSrfB;line-height: 150px;text-align: center;}
+#gnb > ul > li> a:after{content: "";position: absolute;left: 0;top: 0;width: 0;height: 100%;background:url("../images/common/gnb_select.png") no-repeat 0 50%;z-index: -1}
+#gnb > ul > li.on > a, #gnb > ul > li > a:hover,#gnb > ul > li.on > a:focus{color: #fff}
+#gnb > ul > li.on > a:after, #gnb > ul > li > a:hover:after,#gnb > ul > li.on > a:focus:after{width: 100%;color: #fff}
+
+#gnb > ul > li > div{position: absolute;top: 150px;height: 149px;border-top: 1px solid #999;text-align: left;left: 0;right: 0;background: #fff;}
+#gnb > ul > li > div> ul{position: relative;padding-top: 45px;height: 54px}
+#gnb > ul > li.gnb1 > div > ul.sub1 > li{width: 260px;margin-left: 33px}
+#gnb > ul > li.gnb1 > div > ul.sub1 > li:first-child{padding-right: 140px}
+#gnb > ul > li.gnb1 > div > ul.sub1 > li > a{width: 260px}
+#gnb ul li div ul li{padding-left: 10px}
+#gnb ul li div ul li:first-child{padding-left: 0}
+#gnb ul li div ul li.on a, #gnb ul li div ul li a:hover, #gnb ul div li ul li a:focus, #gnb > ul > li.gnb5 > div > ul.sub5 > li:hover a, #gnb > ul > li.gnb5 > div > ul.sub5 > li a:focus{font-family: NotoSansR}
+#gnb ul li.gnb1 div ul li ul{padding-top: 5px}
+#gnb ul li.gnb1 div ul li ul.sub1_1 li{width: 80px}
+#gnb ul li.gnb1 div ul li ul.sub1_1 .sub1_1_2{width: 60px}
+#gnb ul li.gnb1 div ul li ul.sub1_2 li{width: 57px}
+#gnb ul li div ul li ul li a{font-family: NotoSansL;}
+#gnb > ul > li.gnb5 > div > ul.sub5{padding-left: 530px;width: 200px}
+#gnb > ul > li.gnb5 > div > ul.sub5 > ul{width: 100px;height: 27px;background: #aaa}
+#gnb > ul > li.gnb5 > div > ul.sub5 > li{width: 90px;padding-left: 0 !important;font-family: NotoSansL;font-size: 18px;padding-bottom: 3px}
+#gnb > ul > li.gnb5 > div > ul.sub5 > ul:first-child{padding-bottom: 5px}
+#gnb > ul > li.gnb5 > div > ul.sub5 > ul > li{width: 95px;}
+
+
+/* .util */
+#header .util{width: 130px;height: 70px;left: 50%;margin-left: 470px;padding-top: 36px;}
+#header .util li{float: left;}
+#header .util li a{display: block;}
+#header .util .lang{float: right;width: 44px;height: 20px;}
+#header .util .lang:after{content: "";position: absolute;top:23px; right: 0;width: 100%;height: 3px;background: #333}
+#header .util .lang ul li a{font-family: NotoSansM;font-size: 14px;color: #aaa;}
+#header .util .lang ul li a:hover,#header .util .lang ul li a:focus{color: #333}
+#header .util .lang ul li:first-child a{margin-right: 6px;color: #333}
+#header .util .lang.on a, #header .util .lang a:hover, #header .util .lang a:focus{color: #333}
+#header .util .fast_link{width: 130px;height: 29px;margin-top: 40px;}
+#header .util .fast_link li{width: 26px;height: 29px;margin-right: 22px;}
+#header .util .fast_link li:last-child{margin-right: 0;}
+#header .util .fast_link li a i{font-size: 29px}
+
+/* scroll 했을 때 */
+#header.scroll{height: 90px;}
+#header.scroll .logo{padding-top: 22px;}
+#header.scroll .logo a img{width: 77px;height: 45px;}
+#header.scroll #gnb > ul > li > a{line-height: 90px;}
+#header.scroll #gnb ul li>div{top: 90px;height: 90px;}
+#header.scroll #gnb > ul > li > div > ul{padding-top: 16px}
+
+#header.scroll .util{height: 47px;padding-top: 15px;}
+#header.scroll .util .lang{height: 9px;margin-bottom: 14px;margin-left: 86px;}
+#header.scroll .util .lang:after{display: none;}
+#header.scroll .util .lang ul li a{font-size: 12px;}
+#header.scroll .util .fast_link{margin-top: 15px}
+
+/* transition */
+#header.scroll, #header.scroll .logo, #header.scroll .logo a img, #header.scroll .util, #header.scroll #gnb ul li div, #header, #header .logo, #header .logo a img, #gnb > ul > li > a,#header .util, #header #gnb ul li div{-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;}
+#gnb > ul > li> a:after{transition: all .7s }
+
+
+/* ======================== #content ====================== */
+/* #content{padding-top: 151px} 각 서브 페이지 별로 배경이미지 처리 영역에 padding으로 처리 */
+
+
+/* ======================== #footer ========================== */
+#footer{height: 400px;color: #fff;font-family: NotoSansR;background:#333;margin-top: 200px}
+#footer > div{background: #333;height: 400px;}
+#footer .sns ul li,#footer .box ul li{float: left;}
+#footer div .foot_logo{padding-top: 100px}
+#footer div .foot_logo a{display: block;width: 121px;height: 72px}
+
+#footer div .site{font-family: NotoSrfR;width: 140px;font-size: 25px;line-height: 48px;margin-left: 401px;margin-top: -85px}
+
+#footer div .sns{height: 35px;width: 265px;right: 0;top: 100px}
+#footer div .sns ul li{float: left;margin-left: 41px}
+#footer div .sns .insta{margin-left: 0px}
+#footer div .sns ul li a{display: block;font-size: 0;width: 35px;height: 35px;background: no-repeat;-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s}
+
+#footer div .sns ul .insta a{background-image: url("../images/common/footer_before1.png")}
+#footer div .sns ul .facebook a{background-image: url("../images/common/footer_before2.png")}
+#footer div .sns ul .youtube a{background-image: url("../images/common/footer_before3.png")}
+#footer div .sns ul .blog a{background-image: url("../images/common/footer_before4.png")}
+#footer div .sns ul .insta:hover a, #footer div .sns ul .insta a:focus{background-image: url("../images/common/footer_after1.png");}
+#footer div .sns ul .facebook:hover a, #footer div .sns ul .facebook a:focus{background-image: url("../images/common/footer_after2.png");}
+#footer div .sns ul .youtube:hover a, #footer div .sns ul .youtube a:focus{background-image: url("../images/common/footer_after3.png");}
+#footer div .sns ul .blog:hover a, #footer div .sns ul .blog a:focus{background-image: url("../images/common/footer_after4.png");}
+
+#footer div .box{width: 265px;height: 114px;right: 0;top: 153px;font-size: 12px;box-sizing: border-box}
+#footer div .box .info, #footer div .box address ul{margin-bottom: 8px}
+#footer div .box .info li{padding-left: 27px}
+#footer div .box .info li:first-child{padding-left: 0;}
+#footer div .box address ul li{float: left}
+#footer div .box address ul li:first-child{position: relative;}
+#footer div .box address .list1 li:first-child{padding-right: 27px}
+#footer div .box address .list2 li:first-child{padding-right: 10px}
+#footer div .box address .list3 li:first-child{padding-right: 35px}
+#footer div .box address .list1 li:first-child:after, #footer div address .list3 li:first-child:after{content: "";position: absolute;top: 3px;width: 1px;height: 14px;background: #fff}
+#footer div .box address .list1 li:first-child:after{left: 58px}
+#footer div .box address .list3 li:first-child:after{left: 130px}
+#footer div .box p{margin-top: 15px}

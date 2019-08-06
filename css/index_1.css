@@ -1,0 +1,144 @@
+@charset "utf-8";
+body, p, div, h2{margin: 0;padding: 0;}
+a:link, a:visited, a:hover, a:active{color: inherit;text-decoration: none}
+img{vertical-align: top;border: none}
+body{color: #333}
+h2{font-size: inherit;font-weight: normal}
+@font-face{
+    font-family: NotoSansR;
+    src: url("../fonts/NotoSansKR-Regular.eot");
+    src: local("※"),
+    url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+    url("../fonts/NotoSansKR-Regular.otf") format("opnetype")
+}
+@font-face{
+    font-family: NotoSansB;
+    src: url("../fonts/NotoSansKR-Bold.eot");
+    src: local("※"),
+    url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSansKR-Bold.woff") format("woff"),
+    url("../fonts/NotoSansKR-Bold.otf") format("opnetype")
+}
+/* 공통클래스 */
+.blind{font-size: 0;width: 1px;height: 1px;overflow: hidden;position: absolute;top: 0;left: -9999px;text-indent: -9999px}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+.clearfix{content: "";display: block;clear: both}
+
+/* #cnt5 */
+#cnt5{display: table;font-family: NotoSansR;font-size: 50px;width: 100%;height:920px;min-width: 1200px;min-height: 800px;background: url("../images/index/event_Index_bg2_2.jpg") no-repeat;;overflow: hidden;}
+#cnt5 .before{width: 80px;height: 80px;line-height: 80px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;text-align: center}
+#cnt5 div .after{font-family: NotoSansR;font-size: 30px}
+#cnt5 a{display: block}
+
+#cnt5 #event1{top: 0;left: 0;}/*  */
+#cnt5 #event1 .wrap .after, #cnt5 #event1 .wrap a{margin-left: 70px} 
+#cnt5 #event2{top: 0;right: 0}/* ;margin: 34px 408px 0 0 */
+#cnt5 #event3{bottom: 0;left: 0;}/* margin: 0 0 105px 217px */
+#cnt5 #event4{bottom: 0;right: 0}/* ;margin: 0 206px 129px */
+#cnt5 #event1 .before{background: #d2e3fc;margin: 31px 0 0 300px}
+
+#cnt5 #event2 .before{background: #f8d2ce;margin: 34px 408px 0 0}
+
+#cnt5 #event3 .before{background: #ffefc3;margin: 0 0 105px 217px}
+
+#cnt5 #event4 .before{background: #e9d0e9;margin: 0 206px 129px}
+#cnt5 #event3 .wrap .after, #cnt5 #event3 .wrap a{margin-left: 40px}
+#cnt5 #event3 .wrap .after, #cnt5 #event4 .wrap .after{margin-top: -150px}
+#cnt5 div .before:after{content: "";display: block;width: 90px;height: 90px;border: 1px solid;border-radius: 50%;margin-top: -86px;margin-left: -6px}
+
+
+#cnt5 #event1 .before:after{border-color: #d2e3fc;animation: circle1 0.9s infinite alternate}
+#cnt5 #event2 .before:after{border-color: #f8d2ce;animation: circle3 0.9s 0.3s infinite alternate}
+#cnt5 #event3 .before:after{border-color: #ffefc3;animation: circle2 0.8s 0.4s infinite alternate}
+#cnt5 #event4 .before:after{border-color: #e9d0e9;animation: circle4 1s 0.2s infinite alternate}
+/* 크기움직임 */
+
+#cnt5 > div{width: 400px;height: 300px}
+#cnt5 .wrap{z-index: 200;}
+#cnt5 img, #cnt5 .after{opacity: 0;filter: Alpha(opacity=0);-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s}
+
+
+#cnt5 .on img, #cnt5 .on .after{opacity: 1;filter: Alpha(opacity=100)}
+#cnt5 .hidden{width: 80px;height: 80px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;z-index: 100;opacity: 0;-webkit-transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);-moz-transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);-o-transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)}
+#cnt5 #event1 .hidden{top: 0;left: 0;background-color: #d2e3fc}
+#cnt5 #event2 .hidden{top: 0;right: 0;background-color: #f8d2ce}
+#cnt5 #event3 .hidden{bottom: 0;left: 0;background-color: #ffefc3}
+#cnt5 #event4 .hidden{bottom: 0;right: 0;background-color: #e9d0e9}
+
+#cnt5 .hidden.on{opacity: 1;-webkit-transform: scale(13);-ms-transform: scale(13);-moz-transform: scale(13);-o-transform: scale(13);transform: scale(13);transform-origin: 50%}
+
+@-webkit-keyframes circle1{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-moz-keyframes circle1{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-o-keyframes circle1{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@keyframes circle1{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+
+
+@-webkit-keyframes circle2{
+    from{transform: scale(1)}
+    to{transform: scale(1.5)}
+}
+@-moz-keyframes circle2{
+    from{transform: scale(1)}
+    to{transform: scale(1.5)}
+}
+@-o-keyframes circle2{
+    from{transform: scale(1)}
+    to{transform: scale(1.5)}
+}
+@keyframes circle2{
+    from{transform: scale(1)}
+    to{transform: scale(1.5)}
+}
+
+
+
+@-webkit-keyframes circle3{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-moz-keyframes circle3{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-o-keyframes circle3{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@keyframes circle3{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+
+
+
+
+@-webkit-keyframes circle4{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-moz-keyframes circle4{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@-o-keyframes circle4{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}
+@keyframes circle4{
+    from{transform: scale(1)}
+    to{transform: scale(2)}
+}

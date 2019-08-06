@@ -1,0 +1,218 @@
+@charset "utf-8";
+strong{font-weight: normal}
+
+/* black 인덱스 페이지 */
+#mainslider{position: relative;overflow: hidden;}
+#mainslider, #mainslider .visual, #mainslider .visual li{width: 100%;height: 801px;}
+#mainslider .visual li{position: absolute;top: 0;left: 100%;}
+#mainslider .visual .list1{background: #645e62;left: 0;}
+#mainslider .visual .list2{background: #fbb9a9}
+#mainslider .visual .list3{background: #e9d4bf}
+#mainslider .visual .list3 img{padding-top: 302px}
+#mainslider .visual li .txt_box{float: left;color: #333;position: absolute;top: 324px;left: 400px;}
+#mainslider .visual .list1 .txt_box{color: #fff}
+#mainslider .visual li .txt_box span{font-size: 28px;font-family: NotoSrfM}
+#mainslider .visual li .txt_box strong{display: block;font-size: 50px;font-family: NotoSrfB;margin-bottom: 50px;}
+#mainslider .visual li .txt_box p{font-size: 22px;font-family: NotoSansR}
+#mainslider .visual li img{margin-left: 880px;}
+#mainslider .visual li.list1 img{padding-top: 151px;}
+
+.prev_next button, .indicator, .play_stop{position: absolute}
+#mainslider .prev_next button{top: 303px;}
+#mainslider .prev{left: 20px;}
+#mainslider .next{right: 20px;}
+
+#mainslider .indicator, #mainslider .play_stop{bottom: 50px;left: 50%;}
+#mainslider .indicator{margin-left: -550px;}
+#mainslider .indicator li{float: left;margin-right: 15px;}
+#mainslider .indicator li a{display: block;width: 17px;height: 17px;border-radius: 50%;background: url("../images/common/indiBtn.png") no-repeat;text-indent: -9999px}
+#mainslider .indicator li.on a{background-color: #99001c}
+
+#mainslider .play_stop{margin-left: -400px;}
+#mainslider .play_stop button{width: 50px;height: 17px;color: #99001c;font-family: NotoSansB}
+
+#content{min-width: 1200px}
+
+#beauty .cosmetics li div strong{font-size: 50px;font-family: NotoSansB}
+#beauty .cosmetics li div P{font-size: 25px}
+
+#beauty .cosmetics .face{padding-top: 296px;position: relative;height: 835px;}
+#beauty .cosmetics .face img{position: absolute;}
+#beauty .cosmetics .face .model{left: 50%;margin-left: -739px;}
+#beauty .cosmetics .face .brush{top: 740px;left: 50%;margin-left: -343px;}
+#beauty .cosmetics .face .ft{top: 366px;left: 50%;margin-left: 233px;}
+#beauty .cosmetics .face .fade{box-sizing: border-box;padding-left: 684px;padding-top: 296px;}
+#beauty .cosmetics .face strong{display: block;padding-left: 116px;}
+#beauty .cosmetics .face a{position: absolute;top: 55%;left: 50%;margin-left: 90px;background: url("../product/arrow.png") no-repeat;text-indent: -9999px;width: 27px;height: 31px;}
+
+#beauty .cosmetics .lip{position: relative;height: 705px;padding-top: 444px;}
+#beauty .cosmetics .lip img{position: absolute;}
+#beauty .cosmetics .lip .redlip{left: 50%;margin-left: -749px;top: 250px;}
+#beauty .cosmetics .lip .bg{background: #ddc2b9;height: 705px;}
+#beauty .cosmetics .lip .bg .lipgirl{left: 50%;margin-left: 204px;}
+#beauty .cosmetics .lip .fade{box-sizing: border-box;padding-top: 465px;text-align: center;padding-right: 502px;}
+#beauty .cosmetics .lip a{position: absolute;bottom: 16%;left: 50%;margin-left: 35px;background: url("../product/arrow.png") no-repeat;text-indent: -9999px;width: 27px;height: 31px;}
+
+#beauty .cosmetics .eye{margin-top: 175px;position: relative;height: 845px;}
+#beauty .cosmetics .eye img{position: absolute;}
+#beauty .cosmetics .eye .sp{left: 50%;margin-left: -509px;}
+#beauty .cosmetics .eye .st1{top: 248px;left: 50%;margin-left: -838px;}
+#beauty .cosmetics .eye .st2{top: 507px;left: 50%;margin-left: -586px;}
+#beauty .cosmetics .eye .se{left: 50%;margin-left: 162px;}
+#beauty .cosmetics .eye .fade{box-sizing: border-box;padding-top: 198px;padding-right: 30px;text-align: center}
+#beauty .cosmetics .eye .fade:before{content: "";position: absolute;top: 90px;left: 50%; margin-left: -250px;width: 468px;height: 432px;border: 3px solid #000;}
+#beauty .cosmetics .eye .fade strong{display: block;margin-bottom: 34px;}
+#beauty .cosmetics .eye a{position: absolute;top: 27%;left: 50%;margin-left: 110px;background: url("../product/arrow.png") no-repeat;text-indent: -9999px;width: 27px;height: 31px;}
+
+#beauty .cosmetics .cheek{position: relative;height: 836px;margin-top: 200px;background: #fcf0f0}
+#beauty .cosmetics .cheek img{position: absolute;}
+#beauty .cosmetics .cheek .girl{top: 0;left: 50%;margin-left: -795px;}
+#beauty .cosmetics .cheek .cp1{bottom: 161px;left: 50%;margin-left: 68px;}
+#beauty .cosmetics .cheek .cp2{bottom: 167px;left: 50%;margin-left: 317px;}
+#beauty .cosmetics .cheek .fade{box-sizing: border-box;padding-top: 230px;padding-left: 617px;text-align: center;}
+#beauty .cosmetics .cheek a{position: absolute;top: 40%;left: 50%;margin-left: 90px;background: url("../product/arrow.png") no-repeat;text-indent: -9999px;width: 27px;height: 31px;}
+
+#beauty .cosmetics li .fade{opacity: 0;filter: Alpha(Opacity=0);-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s}
+
+#beauty .cosmetics li .fade{-webkit-transform: translateY(70px);-moz-transform: translateY(70px);transform: translateY(70px)}
+
+/* lip 인덱스페이지 */
+#content .subBg{background: url("../images/product/black/lip/sub-bg.jpg") no-repeat;background-size: auto;color: #99001c;height: 650px;padding-top: 151px;}
+#content .subBg .area{text-align: right;padding-top: 248px;}
+#content .subBg strong{font-size: 60px;font-family: NotoSrfB;display: block;}
+#content .subBg p{font-size: 25px;font-family: NotoSrfR}
+#content div div h3{font-size: 50px;font-family: NotoSansB;text-align: center;margin-bottom: 66px;}
+
+/* NEW */
+#slider{position: relative;padding: 0 40px;margin: 280px auto;}
+#slider .box{width: 1119px;overflow: hidden}/* overflow: hidden; */
+#slider .box ul{position: relative;height: 485px;}
+#slider .box ul li{float: left;padding-right: 24px;text-align: center}
+#slider button{position: absolute;top: 353px;width: 36px;height: 36px;}
+#slider #prev{left: 0;}
+#slider #next{right: 0;}
+#slider .box ul li a{display: block;position: relative;}
+#slider .box ul li span{display: block;margin-top: 25px;}
+#slider .box ul .list1 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list1 a:hover .hover, #slider .box ul .list1 a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+#slider .box ul .list2 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list2 a:hover .hover, #slider .box ul .list2 a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+#slider .box ul .list3 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list3 a:hover .hover, #slider .box ul .list3a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+#slider .box ul .list4 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list4 a:hover .hover, #slider .box ul .list4 a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+#slider .box ul .list5 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list5 a:hover .hover, #slider .box ul .list5 a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+#slider .box ul .list6 a .hover{position: absolute;top: 0;left: 0;opacity: 0;filter: Alpha(opacity=0);transition: opacity 0.3s}
+#slider .box ul .list6 a:hover .hover, #slider .box ul .list6 a:focus .hover{opacity: 1;filter: Alpha(opacity=100);background: rgba(155,155,155,0.5)}
+
+/* BEST COLOR */
+#accordion .colorBox{height: 404px;width: 1200px}
+#accordion .colorBox dt, #accordion dd{float: left;}
+#accordion .colorBox dt{width: 240px;}
+#accordion .colorBox dt button{width: 240px;height: 405px;}
+#accordion .colorBox dt.on button{width: 240px;height: 405px;}
+#accordion .colorBox dt .btn1{background: #ed1c24}
+#accordion .colorBox dt .btn2{background: #ff673e}
+#accordion .colorBox dt .btn3{background: #ed145b}
+#accordion .colorBox div{width: 480px;height: 405px;}
+#accordion .colorBox dd{display: none;width: 0;height: 405px;position: relative;overflow: hidden;}
+#accordion .colorBox dd span{font-size: 30px;color: #fff;position: absolute;top: 178px  ;left: 0;}
+#accordion .colorBox dd.view{display: block;width: 480px;}
+
+#accordion .colorBox dd img{position: absolute;top: 55px;right: 84px;}
+#accordion .colorBox dd p{text-align: center;position: absolute;bottom: 60px;right: 108px;color: #fff}
+#accordion .colorBox .color1{background: #ed1c24;display: block;width: 480px;}
+#accordion .colorBox .color2{background: #ff673e}
+#accordion .colorBox .color3{background: #ed145b}
+
+/* PRODUCT */
+#product{margin-top: 280px;}
+#product .lipTab{width: 1200px;margin: 0 auto;}
+#product .lipTab .btnwrap{height: 180px;line-height: 180px;font-size: 24px;font-family: NotoSansR;text-align: center}
+#product .lipTab .btnwrap li{float: left;width: 25%;}
+#product .lipTab .btnwrap li button{width: 100%;height: 180px;border: 1px solid #aaa;border-right: none;}
+#product .lipTab .btnwrap .btn4 button{border-right: 1px solid #aaa;}
+#product .lipTab .btnwrap li:hover button, #product .lipTab .btnwrap li.on button, #product .lipTab .btnwrap li button:focus{background: #f8cd9e no-repeat 50% 50%;text-indent: -9999px;}
+#product .lipTab .btnwrap .btn1:hover button, #product .lipTab .btnwrap .btn1.on button, #product .lipTab .btnwrap .btn1 button:focus{background-image: url("../images/product/black/lip/lipstick.png")}
+#product .lipTab .btnwrap .btn2:hover button, #product .lipTab .btnwrap .btn2.on button, #product .lipTab .btnwrap .btn2 button:focus{background-image: url("../images/product/black/lip/tint.png")}
+#product .lipTab .btnwrap .btn3:hover button, #product .lipTab .btnwrap .btn3.on button, #product .lipTab .btnwrap .btn3 button:focus{background-image: url("../images/product/black/lip/glow.png")}
+#product .lipTab .btnwrap .btn4:hover button, #product .lipTab .btnwrap .btn4.on button, #product .lipTab .btnwrap .btn4 button:focus{background-image: url("../images/product/black/lip/care.png")}
+
+#product .lipKind{margin-top: 209px;display: none}
+#product .lipKind ul{height: 30px;}
+#product .lipKind ul li{float: left;width: 600px;height: 282px;}
+#product .lipKind > ul > li{margin-bottom: 344px;}
+#product .lipKind ul li .lipTxt{float: right;width: 400px;padding-left: 35px;}
+#product .lipKind ul li .lipTxt strong, #product .lipKind ul li .lipTxt span{display: block;font-family: NotoSansR}
+#product .lipKind ul li .lipTxt strong{font-size: 24px;padding-top: 20px}
+#product .lipKind ul li .lipTxt span{font-size: 20px;padding-top: 18px}
+#product .lipKind ul li .lipTxt ul{padding-top: 24px}
+#product .lipKind ul li .lipTxt ul li{float: left;width: 30px;height: 30px;margin-right: 1px;text-indent: -9999px}
+#product .lipKind ul li .lipTxt p{font-size: 20px;font-family: NotoSansR;padding: 15px 0 15px;}
+#product .lipKind ul li .lipTxt a{background: #fff;border: 1px solid #333;padding: 8px 24px}
+
+#product .lipKind ul li .color1 .c11{background: #8f1524}
+#product .lipKind ul li .color1 .c12{background: #7c0404}
+#product .lipKind ul li .color1 .c13{background: #c30017}
+#product .lipKind ul li .color2 .c21{background: #ff3c00}
+#product .lipKind ul li .color2 .c22{background: #f21c6d}
+#product .lipKind ul li .color2 .c23{background: #fc132e}
+#product .lipKind ul li .color2 .c24{background: #f8919d}
+#product .lipKind ul li .color2 .c25{background: #d8353d}
+#product .lipKind ul li .color2 .c26{background: #d6111f}
+#product .lipKind ul li .color2 .c27{background: #ff0012}
+#product .lipKind ul li .color3 .c31{background: #8b322c}
+#product .lipKind ul li .color3 .c32{background: #ff0000}
+#product .lipKind ul li .color3 .c33{background: #b8093a}
+#product .lipKind ul li .color3 .c34{background: #a00202}
+#product .lipKind ul li .color3 .c35{background: #a4035e}
+#product .lipKind ul li .color4 .c41{background: #e70182}
+#product .lipKind ul li .color4 .c42{background: #ff00d8}
+#product .lipKind ul li .color4 .c43{background: #ff0759}
+#product .lipKind ul li .color4 .c44{background: #c902ab}
+#product .lipKind ul li .color4 .c45{background: #fe6306}
+#product .lipKind ul li .color5 .c51{background: #fe034e}
+#product .lipKind ul li .color5 .c52{background: #ff0000}
+#product .lipKind ul li .color5 .c53{background: #fe2003}
+#product .lipKind ul li .color5 .c54{background: #ff01d5}
+#product .lipKind ul li .color5 .c55{background: #d403fe}
+#product .lipKind ul li .color5 .c56{background: #f86dc3}
+#product .lipKind ul li .color5 .c57{background: #fa5a68}
+#product .lipKind ul li .color6 .c61{background: #ff0062}
+#product .lipKind ul li .color6 .c62{background: #ff0015}
+#product .lipKind ul li .color6 .c63{background: #ff00dd}
+#product .lipKind ul li .color6 .c64{background: #f33535}
+#product .lipKind ul li .color7 .c71{background: #e20447}
+#product .lipKind ul li .color7 .c72{background: #ff006a}
+#product .lipKind ul li .color7 .c73{background: #f71e1e}
+#product .lipKind ul li .color7 .c74{background: #ff0000}
+#product .lipKind ul li .color7 .c75{background: #df0808}
+#product .lipKind ul li .color7 .c76{background: #f0298c}
+#product .lipKind ul li .color8 .c81{background: #ffc0cb}
+#product .lipKind ul li .color9 .c91{background: #ffc0cb}
+#product .lipKind ul li .color10 .c101{background: #ffc0cb}
+
+/* check */
+.bonus{background: #995eaa;width: 100%;height: 650px;padding-top: 151px;}
+.bonus strong{font-size: 45px;font-family: NotoSansM;color: #fff;text-align: center;display: block;padding-top: 90px;}
+.bonus ul{color: #fff;font-size: 25px;text-align: center}
+.bonus ul li{margin-top: 150px;display: inline-block;float: left;width: 250px;padding-right: 66px;}
+.bonus ul li:last-child{padding: 0}
+.bonus ul li p{border: 3px solid #fff;width: 102px;height: 60px;padding: 25px 74px 40px;margin-top: 41px;}
+.my{background: url("../images/event/my.jpg") no-repeat;height: 256px;margin-top: 121px;}
+.my span{font-size: 30px;font-family: NotoSansM;line-height: 256px;}
+.my .first{padding-left: 184px;}
+.my .second{padding-right: 84px;}
+.my .second a{font-size: 18px;width: 64px;height: 18px;background: #fff;padding: 5px 18px;vertical-align: center}
+.my #totalTxt, .my #couponTxt{color: #99001c}
+.ui-widget.ui-widget-content{width: 1200px;height: 987px;margin: 0 auto;margin-top: 121px;border: none}
+.ui-datepicker table{height: 987px}
+.ui-state-default{cursor: default}
+.ui-state-default, .ui-widget-content .ui-state-default{background: #a1459f
+    ;width: 130px;height: 130px;border-radius: 50%;color: #fff;text-align: center;font-size: 25px;line-height: 130px;}
+.ui-state-active, .ui-widget-content .ui-state-active{cursor: pointer;background: #f860b4 }
+.ui-datepicker-year, .ui-datepicker-prev, .ui-datepicker-next{display: none;}
+.ui-datepicker-calendar thead tr th{color:#fff}
+.ui-widget-header{font-size: 40px;background: none;border: none;}
+a.ui-state-default.on{background: #a1459f url("../images/event/check.png") no-repeat 50% 50%;color: #a1459f !important}
