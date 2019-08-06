@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title> review : belle </title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub_je.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" href="../images/common/favicon.ico">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/sub_je.js"></script>    
+</head>
+<body data-dep-one="3" data-dep-two="1">
+    <div id="skip">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    
+    <header id="header">
+        <h1 class="logo">
+            <a href="../index.html"><img src="../images/common/logo.gif" alt="belle" width="123" height="76"></a>
+        </h1>
+        
+        <nav id="gnb">
+            <h2 class="blind">주메뉴</h2>
+            <ul>
+                <li class="gnb1">
+                    <a href="../product/sub1_1.html">Product</a>
+                    <div>
+                        <ul class="sub1">
+                            <li>
+                                <a href="../product/sub1_1.html">White</a>
+                                <ul class="sub1_1">
+                                    <li class="sub1_1_2">
+                                        <a href="../product/bath.html">Bath</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Skin Care</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product/sub1_2.html">Black</a>
+                                <ul class="sub1_2">
+                                    <li>
+                                        <a href="#">Face</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/lip.html">Lip</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/eye.html">Eye</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cheek</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb2">
+                    <a href="../best/best.html">Best</a>
+                </li>
+                <li class="gnb3">
+                    <a href="../review/review.html">Review</a>
+                </li>
+                <li class="gnb4">
+                    <a href="../event/event.html">Event</a>
+                </li>
+                <li class="gnb5">
+                    <a href="../customer/store.html">Customer</a>
+                    <div>
+                        <ul class="sub5">
+                                <li>
+                                    <a href="../customer/store.html">매장소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb6">
+                    <a href="../brand/brand.html">Brand</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <div class="lang p_r">
+                <p class="blind">언어선택</p>
+                <ul>
+                    <li>
+                        <a href="#">KR</a>
+                    </li>
+                    <li>
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fast_link">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-user"></i>
+                            <span class="blind">로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-search"></i>
+                            <span class="blind">검색</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="blind">장바구니</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div id="reviewCnt1" class="top_tit">
+            <h2>Review</h2>
+        </div>
+     
+        <div id="reviewCnt2" class="area p_r">
+            <div id="cosTab" class="review_tab" role="navigation" aria-label="제품 카테고리별 리뷰보기">
+                <ul class="btn_tab1">
+                    <li class="btn_line1">
+                        <button type="button" id="tab11" data-tgindex="6" aria-controls="ctgBath ctgCare ctgFace ctgLip ctgEye ctgCheek">All</button>
+                    </li>
+                    <li class="btn_line2">
+                        <button type="button" id="tab12">White</button>
+                        <ul class="btn_tab2">
+                            <li class="btn_wctg1">
+                                <button type="button" data-tgindex="0" aria-controls="ctgBath">Bath</button>
+                            </li>
+                            <li class="btn_wctg2">
+                                <button type="button" data-tgindex="1" aria-controls="ctgCare">Skin Care</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="btn_line3">
+                        <button type="button" id="tab13">Black</button>
+                        <ul class="btn_tab2">
+                            <li class="btn_bctg1">
+                                <button type="button" data-tgindex="2" aria-controls="ctgFace">Face</button>
+                            </li>
+                            <li class="btn_bctg2">
+                                <button type="button" data-tgindex="3" aria-controls="ctgLip">Lip</button>
+                            </li>
+                            <li class="btn_bctg3">
+                                <button type="button" data-tgindex="4" aria-controls="ctgEye">Eye</button>
+                            </li>
+                            <li class="btn_bctg4">
+                                <button type="button" data-tgindex="5" aria-controls="ctgCheek">Cheek</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="cosSlider" class="review_slider p_r">
+                <div class="slider_wrap">
+                    <ul class="ctg_bath" id="ctgBath">
+                        <li class="bath1">
+                            <button type="button" id="bathTab1" role="tab">바디</button>
+                        </li>
+                        <li class="bath2">
+                            <button type="button" id="bathTab2" role="tab">헤어</button>
+                        </li>
+                        <li class="bath3">
+                            <button type="button" id="bathTab3" role="tab">입욕제</button>
+                        </li>
+                    </ul>
+                    <ul class="ctg_care" id="ctgCare">
+                        <li class="care1">
+                            <button type="button" id="careTab1" role="tab">클렌저</button>
+                        </li>
+                        <li class="care2">
+                            <button type="button" id="careTab2" role="tab">기초케어</button>
+                        </li>
+                        <li class="care3">
+                            <button type="button" id="careTab3" role="tab">선케어</button>
+                        </li>
+                        <li class="care4">
+                            <button type="button" id="careTab4" role="tab">마스크팩</button>
+                        </li>
+                    </ul>
+                    <ul class="ctg_face" id="ctgFace">
+                        <li class="face1">
+                            <button type="button" id="faceTab1" role="tab">메이크업<br>베이스</button>
+                        </li>
+                        <li class="face2">
+                            <button type="button" id="faceTab2" role="tab">프라이머</button>
+                        </li>
+                        <li class="face3">
+                            <button type="button" id="faceTab3" role="tab">파운데이션</button>
+                        </li>
+                        <li class="face4">
+                            <button type="button" id="faceTab4" role="tab">쿠션파운데이션</button>
+                        </li>
+                        <li class="face5">
+                            <button type="button" id="faceTab5" role="tab">컨실러</button>
+                        </li>
+                        <li class="face6">
+                            <button type="button" id="faceTab6" role="tab"id="faceTab1" role="tab">파우더</button>
+                        </li>
+                    </ul>
+                    <ul class="ctg_lip" id="ctgLip">
+                        <li class="lip1">
+                            <button type="button" id="lipTab1" role="tab">립스틱</button>
+                        </li>
+                        <li class="lip2">
+                            <button type="button" id="lipTab2" role="tab">틴트</button>
+                        </li>
+                        <li class="lip3">
+                            <button type="button" id="lipTab3" role="tab">글로우</button>
+                        </li>
+                        <li class="lip4">
+                            <button type="button" id="lipTab4" role="tab">케어</button>
+                        </li>
+                    </ul>
+                    <ul class="ctg_eye" id="ctgEye">
+                        <li class="eye1">
+                            <button type="button" id="eyeTab1" role="tab">아이섀도우</button>
+                        </li>
+                        <li class="eye2">
+                            <button type="button" id="eyeTab2" role="tab">아이라이너</button>
+                        </li>
+                        <li class="eye3">
+                            <button type="button" id="eyeTab3" role="tab">아이브로우</button>
+                        </li>
+                        <li class="eye4">
+                            <button type="button" id="eyeTab4" role="tab">마스카라</button>
+                        </li>
+                    </ul>
+                    <ul class="ctg_cheek" id="ctgCheek">
+                        <li class="cheek1">
+                            <button type="button" id="cheekTab1" role="tab">블러셔</button>
+                        </li>
+                        <li class="cheek2">
+                            <button type="button" id="cheekTab2" role="tab">쉐딩</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="control">
+                <button type="button" id="prev">이전</button>
+                <button type="button" id="next">다음</button>
+            </div>
+        </div>
+        <div class="cntwrap" role="presentation">
+            <div id="eye1" role="tabpanel" aria-labelledby="eyeTab1">
+                <div id="eye1Pht" class="review_cnt3 area clearfix">
+                    <h3>포토리뷰</h3>
+                    <ul class="photo_list">
+                        <li>
+                            <a href="#modalE11" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE11">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo2_01.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE12" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE12">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo2_02.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <div id="modalE11" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE11Tit">
+                        <img src="../images/review/photo2_01.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star three"><span class="blind"></span></div>
+                            <h4 id="modalE11Tit">좋아좋아</h4>
+                            <p class="modal_txt">아.. 그냥 진짜 이런색 좋아하면 무조건 사는거에용.. 기존에 스던 섀도우가 품절이라서 다른거 찾다가 요거 맘에 들어서 테스트 했는데..<br>걍 사야됨<br>펄이 조금만 덜 들어갔으면 하는..<br>그래도 스파클링 좋아영</p>
+                            <p class="modal_user">nogs*** (여성/21세/건성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE12" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE12Tit">
+                        <img src="../images/review/photo2_02.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star"><span class="blind"></span></div>
+                            <h4 id="modalE12Tit">예뻐요</h4>
+                            <p class="modal_txt">코랄써보고 예뻐서 고민하다 샀는데 진작살껄.. 너무 예뻐요. 아래가 쿠퍼 위가 코랄</p>
+                            <p class="modal_user">backa***  (여성/33세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                </div>
+                
+                <div id="eye1Txt" class="review_cnt4 area">
+                    <h3>텍스트리뷰</h3>
+                    <div>
+                        <table id="eye1Board" class="review_list">
+                            <caption class="blind"><span>아이브로우</span>텍스트리뷰</caption>
+                            <colgroup>
+                                <col class="col1">
+                                <col class="col2">
+                                <col class="col3">
+                                <col class="col4">
+                                <col class="col5">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th id="lv">만족도</th>
+                                    <th colspan="2">내용</th>
+                                    <th id="type">피부타입</th>
+                                    <th id="dd">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star four"><span class="blind"></span></div></td>
+                                    <td class="fam">벨르 쉐이드 아이즈</td>
+                                    <td class="left"><a href="#">펄되게 작은데 그래서 더이뻐요 자글자글하니 발색 굳</a></td>
+                                    <td headers="type">지성</td>
+                                    <td headers="dd">2019.06.03</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star"><span class="blind"></span></div></td>
+                                    <td class="fam">스파클링 아이즈</td>
+                                    <td class="left"><a href="#">펄자체가 이쁘기도 정말 이쁘지만 밀착력있고 잘안지워지고 지속력 굿</a></td>
+                                    <td headers="type">지성</td>
+                                    <td headers="dd">2019.06.01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#">글쓰기</a>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+            <div id="eye2" role="tabpanel" aria-labelledby="eyeTab2">
+                <div id="eye2Pht" class="review_cnt3 area clearfix">
+                    <h3>포토리뷰</h3>
+                    <ul class="photo_list">
+                        <li>
+                            <a href="#modalE21" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE21">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_01.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE22" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE22">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_02.jpg" alt="" width="300" height="300">
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#modalE23" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE23">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_03.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE24" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE24">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_04.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE25" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE25">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_05.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE26" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE26">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_06.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE27" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE27">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_07.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE28" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE28">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo1_08.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="modalE21" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE21Tit">
+                        <img src="../images/review/photo1_01.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star three"><span class="blind"></span></div>
+                            <h4 id="modalE21Tit">지속력 굿</h4>
+                            <p class="modal_txt">잘 그려지고 사용감은 좋으나 물이 조금만 닿아도 쉽게 잘 지워지네요. 눈가 피부에는 오히려 좋을 것도 같고.. 자연스럽게 표현되어 지는 것 같네요. 얼마나 오래 사용할 수 있을지는 아직 잘 모르겠지만 오래 사용할 수 있으면 좋겠네요. 양이 너무 적은 것들도 있더라구요.</p>
+                            <p class="modal_user">may*** (여성/27세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE22" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE22Tit">
+                        <img src="../images/review/photo1_02.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star"><span class="blind"></span></div>
+                            <h4 id="modalE22Tit">깔끔한 라이너</h4>
+                            <p class="modal_txt">항상 쓰는 라이너~~<br>이걸로 계속 쓴지 2-3년은 된거같네요.<br>펜이라 그리기도 편해요.</p>
+                            <p class="modal_user">dlswjd***  (여성/30세/건성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE23" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE23Tit">
+                        <img src="../images/review/photo1_03.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star four"><span class="blind"></span></div>
+                            <h4 id="modalE23Tit">가성비 좋아요</h4>
+                            <p class="modal_txt">세일해서 구입했는데 괜찮에요. 꼭 사서 써보세용</p>
+                            <p class="modal_user">balu*** (여성/25세/건성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE24" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE24Tit">
+                        <img src="../images/review/photo1_04.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star two"><span class="blind"></span></div>
+                            <h4 id="modalE24Tit">꼼꼼한 클렌징 필수</h4>
+                            <p class="modal_txt">안 번지다고 해서 샀지만<br>그래도 역시나 제 눈에는 번짐이 있어요<br>하지만 다른 펜슬아이라이너보단<br>지속력이 좋아서 클렌징 할 때까지 남아있는 편<br>꼼꼼히 클렌징하지 않으면 남아있어요<br>끝이 뭉둑해서 날렵하게 그리기가 힘들어요</p>
+                            <p class="modal_user">sikb*** (여성/28세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE25" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE25Tit">
+                        <img src="../images/review/photo1_05.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star three"><span class="blind"></span></div>
+                            <h4 id="modalE25Tit">색 이뻐요</h4>
+                            <p class="modal_txt">고동색 너무맘에들어요!! 처음삿을때보다는 조금 심이 굳은거같은데 이정도면 괜찮을싶을정도고요. 하지만 심이 너무좀두꺼운거같아요.. 그거빼곤 잘안번지고 가격도좋아요!</p>
+                            <p class="modal_user">ana*** (여성/21세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE26" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE26Tit">
+                        <img src="../images/review/photo1_06.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star four"><span class="blind"></span></div>
+                            <h4 id="modalE26Tit">좋아요</h4>
+                            <p class="modal_txt">점막 근처에 발라도 잘 안지워지고 너무 좋습니다! 다만 단독 아이라인 용도 보다는, 더 깊은 음영을 주거나 애굣살, 삼각존에 쓰는게 베스트 !</p>
+                            <p class="modal_user">a_*** (여성/19세/건성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE27" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE27Tit">
+                        <img src="../images/review/photo1_07.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star four"><span class="blind"></span></div>
+                            <h4 id="modalE27Tit">유분기제거 해야되요</h4>
+                            <p class="modal_txt">이거 진짜 화장은 해야되는데 시간이 없을 때 좋은 것 같아요! 저는 12. 월넛 브라운 쓰고 있는데 쓱 쓱 긋고 나서 눈두덩이에 펴발라주고 또 라인 그리면 짱짱이에요!! (픽싱되는데 몇 초정도 걸려서 섀도우 처럼 쓸 수 있어서 너무 좋아요) 그리고 샤프너도 내장되있어서 진짜 편해요. 근데 그리기 전에 유분기 제거는 꼭 해주셔야 되요! 급해서 한 번 유분기 제거 안 했다가 다 번졌어요ㅜㅜ 유분만 없다면 지속력도 좋아서 초보자도 잘 쓸 수 있을것 같아요!</p>
+                            <p class="modal_user">90202*** (여성/21세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE28" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE28Tit">
+                        <img src="../images/review/photo1_08.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star three"><span class="blind"></span></div>
+                            <h4 id="modalE28Tit">부드럽게 발려짐</h4>
+                            <p class="modal_txt">부드럽게 발려짐 근데 뭔가 뭉퉁하게 그려져서 정교한 라인을잡고싶을때 맞지않아서 손이 좀안감</p>
+                            <p class="modal_user">haji1*** (여성/33세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                </div>
+                
+                <div id="eye2Txt" class="review_cnt4 area">
+                    <h3>텍스트리뷰</h3>
+                    <div>
+                        <table id="eye2Board" class="review_list">
+                            <caption class="blind"><span>아이라이너</span>텍스트리뷰</caption>
+                            <colgroup>
+                                <col class="col1">
+                                <col class="col2">
+                                <col class="col3">
+                                <col class="col4">
+                                <col class="col5">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th id="lv">만족도</th>
+                                    <th colspan="2">내용</th>
+                                    <th id="type">피부타입</th>
+                                    <th id="dd">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star four"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">엄청 부드럽게 잘 발리네요</a></td>
+                                    <td headers="type">복합성</td>
+                                    <td headers="dd">2019.06.01</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">매트브라운 샀는데 정말정말 색깔 너무너무 예쁘고 잘 그려져요</a></td>
+                                    <td headers="type">지성</td>
+                                    <td headers="dd">2019.06.01</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star three"><span class="blind"></span></div></td>
+                                    <td class="fam">리퀴드 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">번짐 없어서 좋아요</a></td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.31</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">너무 무르지도 않고 번짐도 적어서 좋아요</a></td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.29</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star four"><span class="blind"></span></div></td>
+                                    <td class="fam">리퀴드 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">무쌍에게 딱</a></td>
+                                    <td headers="type">복합성</td>
+                                    <td headers="dd">2019.05.28</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">이건 얇아서 그리기 편하고 지속력이 좋아요</a></td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.28</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">지속력좋고 가성비짱</a></td>
+                                    <td headers="type">지성</td>
+                                    <td headers="dd">2019.05.27</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star three"><span class="blind"></span></div></td>
+                                    <td class="fam">펜슬 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">색도 예쁘고 지속력 좋음.단 좀 빨리 굳음</a></td>
+                                    <td headers="type">복합성</td>
+                                    <td headers="dd">2019.05.26</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star three"><span class="blind"></span></div></td>
+                                    <td class="fam">리퀴드 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">가격도 착하고 제품력도 그에 비해 좋은편 입니다.</a></td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.26</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star two"><span class="blind"></span></div></td>
+                                    <td class="fam">리퀴드 벨라 아이라이너</td>
+                                    <td class="left"><a href="#">요 제품 이번에 사서 사용 중인데 괜찮은 거 같아요</a> </td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#">글쓰기</a>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+            <div id="eye3" role="tabpanel" aria-labelledby="eyeTab3">
+                <div id="eye3Pht" class="review_cnt3 area clearfix">
+                    <h3>포토리뷰</h3>
+                    <ul class="photo_list">
+                        <li>
+                            <a href="#modalE31" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE31">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo3_01.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modalE32" class="open_btn" aria-haspopup="dialog" title="대화상자" aria-controls="modalE32">
+                                <span class="blind">상세보기 (레이어 팝업)</span>
+                                <img src="../images/review/photo3_02.jpg" alt="" width="300" height="300">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <div id="modalE31" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE31Tit">
+                        <img src="../images/review/photo3_01.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star three"><span class="blind"></span></div>
+                            <h4 id="modalE31Tit">색상좋아요</h4>
+                            <p class="modal_txt">색상이 너무 밝지도 진하지도 않아서 좋은데... 여러번 덧바르면 색이 진하고 답답해보여서 한두번 안에 모양을 잡아야돼요</p>
+                            <p class="modal_user">trea*** (여성/35세/복합성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                    <div id="modalE32" class="modal_cnt p_r"  role="dialog" aria-modal="true" aria-labelledby="modalE32Tit">
+                        <img src="../images/review/photo3_02.jpg" alt="" width="300" height="300">
+                        <div>
+                            <div class="star"><span class="blind"></span></div>
+                            <h4 id="modalE32Tit">재구매 예정</h4>
+                            <p class="modal_txt">라이트브라운 구매했는데 제 머리색이랑 잘 맞네요~ 잘 발라지고 눈썹엔 요것만한게 없는것 같네요.</p>
+                            <p class="modal_user">frin***  (여성/31세/건성)</p>
+                        </div>
+                        <button class="close_btn" type="button"  data-link="last"><i class="far fa-times-circle"><span class="blind">닫기</span></i></button>
+                    </div>
+                </div>
+                
+                <div id="eye3Txt" class="review_cnt4 area">
+                    <h3>텍스트리뷰</h3>
+                    <div>
+                        <table id="eye3Board" class="review_list">
+                            <caption class="blind"><span>아이브로우</span>텍스트리뷰</caption>
+                            <colgroup>
+                                <col class="col1">
+                                <col class="col2">
+                                <col class="col3">
+                                <col class="col4">
+                                <col class="col5">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th id="lv">만족도</th>
+                                    <th colspan="2">내용</th>
+                                    <th id="type">피부타입</th>
+                                    <th id="dd">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star four"><span class="blind"></span></div></td>
+                                    <td class="fam">네추럴 오토 볼륨 아이브로우</td>
+                                    <td class="left"><a href="#">뭉치거나 금방 녹아내리지 않고 부드럽고 자연스럽게 발색이 잘된다. 추천함</a></td>
+                                    <td headers="type">복합성</td>
+                                    <td headers="dd">2019.06.02</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star three"><span class="blind"></span></div></td>
+                                    <td class="fam">네추럴 오토 볼륨 아이브로우</td>
+                                    <td class="left"><a href="#">그냥 무난해요 딱히그렇게 좋다는 건 못느끼겠음</a></td>
+                                    <td headers="type">지성</td>
+                                    <td headers="dd">2019.06.01</td>
+                                </tr>
+                                <tr class="row">
+                                    <td headers="lv"><div class="star three"><span class="blind"></span></div></td>
+                                    <td class="fam">네추럴 오토 볼륨 아이브로우</td>
+                                    <td class="left"><a href="#">유지력 좋아요 대신 양 조절 잘해야하고 바른후 살짝 수정은 필요합니다</a></td>
+                                    <td headers="type">건성</td>
+                                    <td headers="dd">2019.05.31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#">글쓰기</a>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="area clearfix p_r">
+            <div class="foot_logo">
+                <a href="../index.html"><img src="../images/common/footer_logo.png" alt="belle" width="121" height="72"></a>
+            </div>
+            <div class="site">
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="../customer/store.html">매장찾기</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sns p_a">
+                <ul>
+                    <li class="insta">
+                        <a href="http://www.instagram.com">인스타그램</a>
+                    </li>
+                    <li class="facebook">
+                        <a href="http://www.facebook.com">페이스북</a>
+                    </li>
+                    <li class="youtube">
+                        <a href="http://www.youtube.com">유투브</a>
+                    </li>
+                    <li class="blog">
+                        <a href="http://blog.naver.com">블로그</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box p_a">
+                <ul class="info clearfix">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <address class="clearfix">
+                    <ul class="list1">
+                        <li>(주)belle</li>
+                        <li>서울특별시 서초구 서초동 1318-2 8층</li>
+                    </ul>
+                    <ul class="list2">
+                        <li>사업자등록번호 012-34-5678</li>
+                        <li><a href="#">통신판매업 신고번호</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li>고객상담 02-123-4567</li>
+                        <li>이메일 <a href="mailto:cs@belle.com">cs@belle.com</a></li>
+                    </ul>
+                </address>
+                <p>Copyright&copy; belle All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>white : belle </title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/sub_ki.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" href="../images/common/favicon.ico">
+		<link href="../css/jquery-sakura.min.css" rel="stylesheet" type="text/css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-sakura.min.js"></script>
+	<script src="../js/fsbanner.js"></script>
+	<script src="../js/gnb.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('body').sakura();
+
+			$('#demo-3').fsBanner({
+				'trigger': 'mouse'
+			});
+
+			$paper = $('.source .accordion div:first-child');
+			$area = $('.accordion');
+
+			$paper.on({
+				'mouseenter':function(){
+					$paper.css({'-webkit-transform':  'perspective(0px) rotateY(-10deg)',  'margin-right':120})
+				},
+				'mouseleave':function(){
+				$paper.css({'-webkit-transform':  'perspective(900px) rotateY(60deg)',  'margin-right':0})
+				}
+			});
+			$area.on('mouseleave', function () {
+				$paper.css({'-webkit-transform':  'perspective(0px) rotateY(-10deg)',  'margin-right':120});
+			});
+
+		});
+	</script>
+</head>
+
+<body data-dep-one="1" data-dep-two="1">
+    <header id="header">
+        <h1 class="logo">
+            <a href="../index.html"><img src="../images/common/logo.gif" alt="belle" width="123" height="76"></a>
+        </h1>
+        
+        <nav id="gnb">
+            <h2 class="blind">주메뉴</h2>
+            <ul>
+                <li class="gnb1">
+                    <a href="../product/sub1_1.html">Product</a>
+                    <div>
+                        <ul class="sub1">
+                            <li>
+                                <a href="../product/sub1_1.html">White</a>
+                                <ul class="sub1_1">
+                                    <li class="sub1_1_2">
+                                        <a href="../product/bath.html">Bath</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Skin Care</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product/sub1_2.html">Black</a>
+                                <ul class="sub1_2">
+                                    <li>
+                                        <a href="#">Face</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/lip.html">Lip</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/eye.html">Eye</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cheek</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb2">
+                    <a href="../best/best.html">Best</a>
+                </li>
+                <li class="gnb3">
+                    <a href="../review/review.html">Review</a>
+                </li>
+                <li class="gnb4">
+                    <a href="../event/event.html">Event</a>
+                </li>
+                <li class="gnb5">
+                    <a href="../customer/store.html">Customer</a>
+                    <div>
+                        <ul class="sub5">
+                                <li>
+                                    <a href="../customer/store.html">매장소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb6">
+                    <a href="../brand/brand.html">Brand</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <div class="lang p_r">
+                <p class="blind">언어선택</p>
+                <ul>
+                    <li>
+                        <a href="#">KR</a>
+                    </li>
+                    <li>
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fast_link">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-user"></i>
+                            <span class="blind">로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-search"></i>
+                            <span class="blind">검색</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="blind">장바구니</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+	<section id="content">
+		<div id="b_cnt1">
+			<div class="b_text">
+				<h2><img src="../images/product/white/logo.png" alt="belle product/white" width="276" height="76"></h2>
+				<P>세계 곳곳의 청정자연에서 생명 에너지를 찾아<br>
+					나누는 자연주의 브랜드입니다.</P>
+			</div>
+		</div>
+
+		<div id="b_cnt2">
+			<div class="jquery-script-clear"></div>
+			<div class="container">
+				<div class="fsbanner" id="demo-3">
+					<div class="list1">
+						<span class="name">1</span>
+						<strong>오직 자연 그대로</strong>
+						<p>우리는 자연의 완벽함을 믿습니다. 우리는 전세계의 청정 자연에서 자연이 주는 선물을 찾아서 가장 자연 그대로에 가까운 상태로 고객들에게 제공하는 것을 목표로 합니다.</p>
+					</div>
+					<div class="list2"><span class="name">2</span>
+						<strong>누구나 누릴 수 있도록</strong>
+						<p>네이처리퍼블릭은 늘 고객의 가까이에서 품질과 가격의 균형을 맞춘 합리적인 제품을 제안합니다. 전세계인 누구나 네처리퍼블릭의 제품과 브랜드를 통해 자연의 선물을 누리게 할 수 있드록 하기
+							위함입니다.</p>
+					</div>
+					<div class="list3"><span class="name">3</span>
+						<strong>함께 소통하며</strong>
+						<p>네이처리퍼블릭은 우리의 고객 그리고 파트너들과 늘 대화 하기를 즐기고 이들과 즐거움과 이로움을 함께 나누기 위해 제품과 매장에서의 경험을 끊임없이 개선합니다.</p>
+					</div>
+					<div class="list4"><span class="name">4</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="b_cnt3">
+			<div class="natural">
+				<p>자연에서 찾은 <span>천연 원재료</span>를 우리의 제품에서<br> 자연 그대로 만날 수 있습니다.</p>
+			</div>
+			<div>
+				<h3>국외원료</h3>
+			</div>
+			<div id="outer" class="source">
+
+				<div class="accordion">
+					<div>
+						<strong>프랑스 브리타뉴 샌드릴리</strong>
+						<img src="../images/product/white/a_img1.jpg" alt="" width="220" height="147" />
+						<p>
+							브리타뉴 해안가에서 자생하는 백색 꽃 촉촉하고 화사한 피부 케어, 프랑스 샌드릴리 뜨거운 여름철 건조한 모래 속에서 가장 아름다운 자태로 피어나는 야생화로 피부에 보습감을 전달하며, 균일하고
+							맑은 피부톤으로 가꾸어줍니다.
+						</p>
+					</div>
+					<div>
+						<strong>불가리아 로즈</strong>
+						<img src="../images/product/white/a_img2.jpg" alt="" width="220" height="147" />
+						<p>
+							피부를 탱탱하게 꽃 피워주는 신이 내린 피부의 선물, 가리아 로즈 자연 유래 성분을 통해 풍부한 수분과 영양을 공급하여 피부가 건조해 지는 것을 방지하고 피부 스트레스를 완화하여 매끄럽고
+							건강하게 유지시켜줍니다.
+						</p>
+					</div>
+					<div>
+						<strong>마다가스카르 바오밥 나무</strong>
+						<img src="../images/product/white/a_img3.jpg" alt="" width="220" height="147" />
+						<p>아프리카의 신성한 생명의 나무 수분 가득, 마다가스카르 바오밥
+							아프리카 사막의 악조건 속에서도 5,000년 이상 사는 긴 수명과 뛰어난 수분 보유 능력을 가진 생명의 나무
+						</p>
+					</div>
+					<div>
+						<strong>하와이 코나 해양 심층수</strong>
+						<img src="../images/product/white/a_img4.jpg" alt="" width="220" height="147" />
+						<p>
+							2천년 잠에서 깨어난 바다의 산물 청정한 자연의 기운을 담은, 하와이코나 해양심층수 생명의 섬 하와이 수심 914m 해저 산맥에서 솟아오른 깊은 바다 속의 맑고 깨끗한 수분 에너지
+						</p>
+					</div>
+					<div>
+						<strong>캘리포니아 알로에 베라</strong>
+						<img src="../images/product/white/a_img5.jpg" alt="" width="220" height="147" />
+						<p>
+							캘리포니아에서 찾은 자연이 빚어낸 선물, 알로에 베라
+							뜨거운 태양에 자극받은 피부를 빠르게 진정시키고 수분을 채워주는, 열대지방 사막의 밝은 햇빛과 높은 온도를 좋아하는 태양의 친구
+						</p>
+					</div>
+					<div>
+						<strong>아프리카 쉐어버터</strong>
+						<img src="../images/product/white/a_img6.jpg" alt="" width="220" height="147" />
+						<p>
+							사하라 사막에서 만난 촉촉한 수분&영양의 비밀, 아프리카 쉐어버터 사하라 사막의 뜨거운 태양과 거친 환경으로부터 원주민들의 피부에 영양과 보습을 공급하는 아프리카의 보석
+						</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h3>국내원료</h3>
+			</div>
+			<div id="inner" class="source">
+
+				<div class="accordion">
+					<div>
+						<strong>제주 새싹</strong>
+						<img src="../images/product/white/a_img1.jpg" alt="" width="220" height="147" />
+						<p>
+							봄날의 새싹같이 촉촉하고 건강한 아이피부로 가꾸어 주는, 제주도 새싹 제주 그린&옐로우 새싹 콤플렉스 함유하여
+							아기 피부를 촉촉하게 가꾸어 주는 저자극 라인입니다.
+						</p>
+					</div>
+					<div>
+						<strong>제주 효모발효</strong>
+						<img src="../images/product/white/a_img2.jpg" alt="" width="220" height="147" />
+						<p>
+							맑고 깨끗한 피부를 위한 7가지 허브 추출물 함유한, 제주 효모발효 제주 효모발효물은 제주도의 맑고 깨끗한 지역에서 취수한 암반수와 제주 쌀을 전통 기법으로 발효시킨 발효물입니다.
+						</p>
+					</div>
+					<div>
+						<strong>제주도 풍란</strong>
+						<img src="../images/product/white/a_img3.jpg" alt="" width="220" height="147" />
+						<p>
+							청정 자연의 섬 제주도에서 거친 외부 환경에도 강한 생명력을 유지하며 자생하는, 제주도 풍란 풍란 캘러스 배양 추출물
+							피부 보습막을 강화하여 보습과 활력을 부여해주는 풍란캘러스
+						</p>
+					</div>
+					<div>
+						<strong>제주 탄산 온천수</strong>
+						<img src="../images/product/white/a_img4.jpg" alt="" width="220" height="147" />
+						<p>
+							대자연의 온기를 담아 윤기 있는 피부를 가꿔주는, 제주 탄산 온천수 제주 탄산 온천수는 사람을 구한 물이란 뜻으로 구명수라 불리며, 중탄산과 유리탄산이 풍부하게 함유되어 피부가 맑아지는 것을
+							도와줍니다.
+						</p>
+					</div>
+					<div>
+						<strong>전라남도 보성녹차</strong>
+						<img src="../images/product/white/a_img5.jpg" alt="" width="220" height="147" />
+						<p>
+							상쾌한 아침 햇살 기운을 듬뿍 받아 신선한, 보성 그린티
+							전남 보성 짙푸른 차밭이 끝없이 펼쳐지는 대지 위, 신선한 녹차잎에서 추출한 가장 귀한 원료인 녹차씨드오일이 주는 생명에너지
+						</p>
+					</div>
+					<div>
+						<strong>골드, 고려홍상, 로얄제리</strong>
+						<img src="../images/product/white/a_img6.jpg" alt="" width="220" height="147" />
+						<p>
+							황금 케어 지금 시작하세요 진귀한 자연의 정성만을 담은, 골드, 고려홍삼, 로얄젤리, 황금누에 피부에 생기를 부여하는 고려 홍삼추출물과 순도 99% 골드, 실크 아미노산을 함유하여 피부를
+							탄력있고 촉촉하게 가꾸어 줍니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <footer id="footer">
+        <div class="area clearfix p_r">
+            <div class="foot_logo">
+                <a href="../index.html"><img src="../images/common/footer_logo.png" alt="belle" width="121" height="72"></a>
+            </div>
+            <div class="site">
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="../customer/store.html">매장찾기</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sns p_a">
+                <ul>
+                    <li class="insta">
+                        <a href="http://www.instagram.com">인스타그램</a>
+                    </li>
+                    <li class="facebook">
+                        <a href="http://www.facebook.com">페이스북</a>
+                    </li>
+                    <li class="youtube">
+                        <a href="http://www.youtube.com">유투브</a>
+                    </li>
+                    <li class="blog">
+                        <a href="http://blog.naver.com">블로그</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box p_a">
+                <ul class="info clearfix">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <address class="clearfix">
+                    <ul class="list1">
+                        <li>(주)belle</li>
+                        <li>서울특별시 서초구 서초동 1318-2 8층</li>
+                    </ul>
+                    <ul class="list2">
+                        <li>사업자등록번호 012-34-5678</li>
+                        <li><a href="#">통신판매업 신고번호</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li>고객상담 02-123-4567</li>
+                        <li>이메일 <a href="mailto:cs@belle.com">cs@belle.com</a></li>
+                    </ul>
+                </address>
+                <p>Copyright&copy; belle All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
